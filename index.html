@@ -5,11 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>多维矩阵网络科技 - 企业网站建设/界面设计制作/Android客户端开发</title>
+    <title>多维矩阵网络科技 - 企业网站建设/UI界面设计制作/Android客户端开发</title>
 
-		<meta name="description" content="多维矩阵网络科技,承接企业网站建设/界面设计制作/Android客户端开发,联系电话:010-52466853,联系人:张经理."/>
+		<meta name="description" content="多维矩阵网络科技,承接企业网站建设/UI界面设计制作/Android客户端开发,联系电话:010-52466853,联系人:张经理."/>
 		<meta name="keywords" content="企业建站, UI设计, UI制作, 界面设计, 界面制作, 网站建设,网站开发,Android开发,Android定制,Android客户端开发"/>
-		<meta name="author" content="Thomsoon.com"/>
+		<meta name="author" content="doadway.com"/>
 		
 		<link rel="shortcut icon" href="img/favicon.png"> 
 		
@@ -98,9 +98,9 @@
 
             <div class="logo">LOGO</div>
             <ul id="menu">
-                <li><a href="#home">首页</a></li>
+                <li><a id="item-index" href="#home">首页</a></li>
                 <li><a  id="item-product" href="#product">产品服务</a></li>
-                <li><a href="#portfolio">应用下载</a></li>
+                <li><a id="item-download" href="#portfolio">应用下载</a></li>
                 <li><a id="item-about" href="#contact">关于我们</a></li>
             </ul>
 
@@ -411,10 +411,25 @@
         
         
         </div>
-      
+
     </section>
-
-
+<section class="side-id">
+    <div class="side-bar">
+        <a href="tencent://message/?uin=1624413124&site=在线咨询&menu=yes" class="icon-qq"></a>
+        <a href="#" class="icon-chat"><div class="chat-tips"><i></i><img style="width:138px;height:138px;" src="#" alt="微信订阅号"></div></a>
+        <a href="#" class="icon-inews"><div class="inews"><i></i>
+            <div class="new-info">
+                <p>巴黎系列恐怖袭击事件已致百余人死亡</p>
+                <p>巴黎系列恐怖袭击事件已致百余人死亡</p>
+                <p onclick="alert(11);">巴黎系列恐怖袭击事件已致百人死亡</p>
+                <p>巴黎系列恐怖袭击事件已致百余人死亡</p>
+                <p>巴黎系列恐怖袭击事件已致百人死亡</p>
+            </div>
+        </div></a>
+        <a target="_blank" href="http://weibo.com/p/1005055489078222" class="icon-blog"></a>
+        <a href="mailto:admin@doadway.com" class="icon-mail"></a>
+    </div>
+</section>
     <section class="footer">
       
         <div class="logo"><img src="img/logo-footer.png"></div>
@@ -430,8 +445,8 @@
         <div class="copyright">© 2014. All Rights Reserved Thomsoon.com</div>        
     
     
-    </section>    
-    
+    </section>
+
 
 </div>
 
@@ -448,6 +463,14 @@
 
    <script>
      $(function(){
+         $("#item-download").mouseover(function(){
+             $(".pop-menu-about").hide();
+             $(".pop-menu-product").hide();
+         });
+         $("#item-index").mouseover(function(){
+             $(".pop-menu-about").hide();
+             $(".pop-menu-product").hide();
+         });
          $("#item-product").mouseover(function(){
 			 $(".pop-menu-about").hide();
              $(".pop-menu-product").css("padding-left",$(this).offset().left+20);

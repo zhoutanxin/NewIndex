@@ -10,7 +10,9 @@
 
 /* iPad (portrait) */
 @media (min-width: 320px) and (max-width: 579px) {
-
+.side-id{
+    display:none;
+}
 .menu{
   display:none;
 }

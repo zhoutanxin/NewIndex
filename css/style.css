@@ -281,8 +281,36 @@ h1 span{
 .menu-mobile li:hover,.menu-mobile-product li:hover,.menu-mobile-about li:hover {
   color:#A2150A;
  }
+/* 浮动菜单 */
+.side-bar a,.chat-tips i {background: url(../img/right_bg.png) no-repeat;}
+.side-bar {width: 66px;position: fixed;bottom: 20px;right: 25px;font-size: 0;line-height: 0;z-index: 1000;}
+.side-bar a {width: 66px;height: 66px;display: inline-block;background-color: #ddd;margin-bottom: 2px;}
+.side-bar a:hover {background-color: #669fdd;}
+.side-bar .icon-qq {background-position: 0 -62px;}
+.side-bar .icon-chat {background-position: 0 -130px;position: relative;}
+.side-bar .icon-chat:hover .chat-tips {display: block;}
+.side-bar .icon-blog {background-position: 0 -198px;}
+.side-bar .icon-mail {background-position: 0 -266px;}
+.side-bar .icon-totop {background-position: 0 -334px;}
+.chat-tips {padding: 20px;border: 1px solid #d1d2d6;position: absolute;right: 78px;top: -55px;background-color: #fff;display: none;}
+.chat-tips i {width: 9px;height: 16px;display: inline-block;position: absolute;right: -9px;top: 80px;background-position:-88px -350px;}
+.chat-tips img {width: 138px;height: 138px;}
 
 
+.side-bar .icon-inews {background-position: 0 -266px;;position: relative;}
+.side-bar .icon-inews:hover .inews {display: block;}
+.side-bar .inews  i:hover{display: block;}
+.inews {padding: 15px;border: 1px solid #d1d2d6;position: absolute;right: 78px;top: -50px;background-color: #fff;display:none;}
+.inews i {background: url(../img/right_bg.png) no-repeat;width: 9px;height: 16px;display: inline-block;position: absolute;right: -9px;top: 75px;background-position:-88px -350px;}
+.inews img {width: 138px;height: 138px;}
+.new-info p{
+    padding: 10px 0 0 0;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 120%;
+    width: 250px;
+    color: #000;
+}
 /* Menu */
 
 .menu{
