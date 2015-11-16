@@ -21,9 +21,9 @@
 	e.preventDefault();
        
 	var target = $(this).attr("href");
-			
-
-	$('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
+       alert($("page1").html());
+       $("#iframe").html($("page1").html());
+       $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
 
 	});
 			
