@@ -1,9 +1,21 @@
 function loadPage(url){
     $("#iframe").load(url);
 }
-loadPage("content.html");
+$("#iframe").load("content.html",function(){
+    topMenu = $("#menu"),
+    topMenuHeight = topMenu.outerHeight()+145,
+    menuItems = topMenu.find("a[href*=#]"),
+    scrollItems = menuItems.map(function(){
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+    });
+    $("#item-download").parent().removeClass("active");
+});
 $("#item-download").click(function(){
     loadPage('apps.html');
+    $(this).parent().siblings().removeClass("active");
+    $(this).parent().addClass("active");
+
 });
   // niceScroll滚动条
   $("html").niceScroll();
@@ -13,26 +25,28 @@ $("#item-download").click(function(){
   $("#pop-menu").sticky({topSpacing:0});
 
   // Menu Scroll to content and Active menu
-    var lastId,
-    topMenu = $("#menu"),
-    topMenuHeight = topMenu.outerHeight()+145,
-    menuItems = topMenu.find("a"),
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
-    var target;
+    var lastId;
+
    $('a[href*=#]').bind('click', function(e) {
         e.preventDefault();
-        target = $(this).attr("href");
-           loadPage("content.html");
-           $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
+        var target = $(this).attr("href");
+       $("#iframe").load("content.html",function(){
+               $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
+               });
+           topMenu = $("#menu"),
+           topMenuHeight = topMenu.outerHeight()+145,
+           menuItems = topMenu.find("a[href*=#]"),
+           scrollItems = menuItems.map(function(){
+               var item = $($(this).attr("href"));
+               if (item.length) { return item; }
            });
+           $("#item-download").parent().removeClass("active");
+        });
         return false;
    });
-if(target){
-    $(target).trigger("click");
-}
+/*$('a[href*=#]').bind('mouseover', function(e) {
+    loadPage("content.html");
+});*/
   $(window).scroll(function(){
    var fromTop = $(this).scrollTop()+topMenuHeight;
    var cur = scrollItems.map(function(){
@@ -49,7 +63,10 @@ if(target){
          .parent().removeClass("active")
          .end().filter("[href=#"+id+"]").parent().addClass("active");
    }
-      console.log("windowTop"+$(this).offset().top+"fromTop:"+fromTop+" cur:"+cur+" id:"+id+" lastId:"+lastId+" curLength:"+cur.length);
+      if($("#item-download").parent().attr("class")=="active"){
+          $("[href=#"+id+"]").parent().removeClass("active");
+      }
+      console.log("windowTop"+$(cur).offset().top+"fromTop:"+fromTop+" cur:"+cur+" id:"+id+" lastId:"+lastId+" curLength:"+cur.length);
  });
   
 
