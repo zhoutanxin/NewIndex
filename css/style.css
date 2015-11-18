@@ -37,7 +37,7 @@
 
 
 html, body{
-  font-family: 'Lato', sans-serif;
+  Font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
   font-size:15px;
   -webkit-font-smoothing: subpixel-antialiased!important;
   color:black;

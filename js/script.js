@@ -1,15 +1,18 @@
 function loadPage(url){
     $("#iframe").load(url);
 }
-$("#iframe").load("content.html",function(){
-    topMenu = $("#menu"),
-    topMenuHeight = topMenu.outerHeight()+145,
-    menuItems = topMenu.find("a[href*=#]"),
-    scrollItems = menuItems.map(function(){
-        var item = $($(this).attr("href"));
-        if (item.length) { return item; }
-    });
+function loadGlobMenu(){
+        topMenu = $("#menu"),
+        topMenuHeight = topMenu.outerHeight()+145,
+        menuItems = topMenu.find("a[href*=#]"),
+        scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+        });
     $("#item-download").parent().removeClass("active");
+}
+$("#iframe").load("content.html",function(){
+    loadGlobMenu();
 });
 $("#item-download").click(function(){
     loadPage('apps.html');
@@ -26,21 +29,14 @@ $("#item-download").click(function(){
 
   // Menu Scroll to content and Active menu
     var lastId;
-
+    loadGlobMenu();
    $('a[href*=#]').bind('click', function(e) {
         e.preventDefault();
         var target = $(this).attr("href");
        $("#iframe").load("content.html",function(){
                $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
                });
-           topMenu = $("#menu"),
-           topMenuHeight = topMenu.outerHeight()+145,
-           menuItems = topMenu.find("a[href*=#]"),
-           scrollItems = menuItems.map(function(){
-               var item = $($(this).attr("href"));
-               if (item.length) { return item; }
-           });
-           $("#item-download").parent().removeClass("active");
+           loadGlobMenu();
         });
         return false;
    });
