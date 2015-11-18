@@ -38,6 +38,8 @@ $("#item-download").click(function(){
                });
            loadGlobMenu();
         });
+       $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
+       });
         return false;
    });
 /*$('a[href*=#]').bind('mouseover', function(e) {

@@ -221,9 +221,10 @@ h1 span{
   position:relative;
   width:100%;
   height:90px;
-  background:#A2150A;
+  background:#fff;
   z-index:1000;
   display:none;
+    border-bottom: 1px solid #ccc;
 }
 
 .menu-media .menu-content{
@@ -233,7 +234,7 @@ h1 span{
 }
 
 .menu-media .menu-content .logo {
-   color:white;
+   color:#A2150A;
    font-weight:700;
    font-size:24px;
    width:200px;
@@ -340,7 +341,8 @@ h1 span{
 }
 
 .menu-content li a:hover{
-  color:#A2150A;
+    color:#A2150A;
+   /* background-color:#A2150A ;*/
 }
 
 
@@ -461,7 +463,7 @@ h1 span{
   position:relative;
   margin:0 auto;
   border:2px solid #f0f0f0;
-  background: url(../img/icons/minimalist.png) white no-repeat center center;
+  background: url(../img/icons/ui.png) white no-repeat center center;
   -moz-border-radius:100px;
   -webkit-border-radius:100px;
   border-radius: 100px;
@@ -492,7 +494,7 @@ h1 span{
   position:relative;
   margin:0 auto;
   border:2px solid #f0f0f0;
-  background: url(../img/icons/free.png) white no-repeat center center;
+  background: url(../img/icons/android.png) white no-repeat center center;
   -moz-border-radius:100px;
   -webkit-border-radius:100px;
   border-radius: 100px;
@@ -989,7 +991,7 @@ input.submit{
 }
 
 .footer .menu-footer a:hover{
-  color:#A2150A;
+  color:#fff;
 }
 
 
