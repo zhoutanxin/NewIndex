@@ -20,6 +20,12 @@ $("#item-download").click(function(){
     $(this).parent().addClass("active");
 
 });
+$("#m-apps").click(function(){
+    loadPage('apps.html');
+    $(this).parent().siblings().removeClass("active");
+    $(this).parent().addClass("active");
+
+});
   // niceScroll滚动条
   $("html").niceScroll();
 
@@ -38,8 +44,10 @@ $("#item-download").click(function(){
                });
            loadGlobMenu();
         });
-       $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
-       });
+       if( $(target).offset()!=undefined){
+           $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
+           });
+       }
         return false;
    });
 /*$('a[href*=#]').bind('mouseover', function(e) {
@@ -64,7 +72,6 @@ $("#item-download").click(function(){
       if($("#item-download").parent().attr("class")=="active"){
           $("[href=#"+id+"]").parent().removeClass("active");
       }
-      console.log("windowTop"+$(cur).offset().top+"fromTop:"+fromTop+" cur:"+cur+" id:"+id+" lastId:"+lastId+" curLength:"+cur.length);
  });
   
 
