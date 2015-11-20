@@ -15,6 +15,39 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/style-responsive.css" />
+    <style>
+
+        .header-menu div{
+            float: left;
+            margin-top: 15px;
+            font-size: 22px;
+        }
+        .header-menu ul{
+            float:right;
+            list-style: none;
+            font-size: 16px;
+            margin-top:15px;
+        }
+
+        .header-menu ul li{
+            float: left;
+            width: 80px;
+            height: 25px;
+            text-align: center;
+            margin-left: 5px;
+            padding-top: 10px;
+
+
+        }
+        .header-menu ul li a{
+            color: #000;
+            font-size: 15px;
+        }
+        .header-menu ul li:hover,.header-menu li.active{
+            background-color: #C0C0C0;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,35 +58,42 @@
 
   <div class="content"  >
 
-    <h1 id="product">应用下载</h1>
-    <hr/>
-    <p class="title">匠心独运,精益求精</p>
+      <div class="header-menu" style="float: left;width: 100%"><div>应用下载</div>
+          <ul>
+  <!--            <li><a href="http://www.smartisan.com/apps/#/calendar" ng-class="{'on':pageName == 'calendar'}"
+                     class="on">日历</a></li>
+              <li><a href="http://www.smartisan.com/apps/#/notes" ng-class="{'on':pageName == 'notes'}">便签</a></li>
+              <li><a href="http://www.smartisan.com/apps/#/mail" ng-class="{'on':pageName == 'mail'}">邮件</a></li>-->
+              <li><a href="http://www.smartisan.com/apps/#/clock" ng-class="{'on':pageName == 'clock'}">时钟</a></li>
+              <li class="active"><a href="http://www.smartisan.com/apps/#/sync" ng-class="{'on':pageName == 'sync'}">点账理财</a></li>
+          </ul>
+      </div>
 
       <div class="column-one">
-
-        <div class="circle-one"></div>
+          <img src="img/a.jpg" width="300px" height="400px">
+<!--        <div class="circle-one"></div>
 
           <h2>RESPONSIVE</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>-->
 
       </div>
 
       <div class="column-two">
-
-        <div class="circle-two"></div>
+          <img src="img/a.jpg" width="300px" height="400px">
+<!--        <div class="circle-two"></div>
 
           <h2>MINIMALIST</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>-->
 
       </div>
 
 
-      <div class="column-three">
+      <div class="column-three" >
+          <img src="img/a.jpg" width="300px" height="400px">
+        <!--<div class="circle-three"></div>-->
 
-        <div class="circle-three"></div>
-
-        <h2>FREEBIES</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        <!--<h2>FREEBIES</h2>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>-->
 
     </div>
 
