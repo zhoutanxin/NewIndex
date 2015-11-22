@@ -43,9 +43,62 @@
             color: #000;
             font-size: 15px;
         }
-        .header-menu ul li:hover,.header-menu li.active{
+        .header-menu ul li:hover,.header-menu li.active,.header-menu li.active a{
             background-color: #C0C0C0;
             border-radius: 8px;
+            color: #fff;
+        }
+        .header-menu ul li:hover a{
+            color: #fff;
+        }
+        .app-left{
+            width: 480px;
+            float: left;
+            background: url("./img/phone.png"); background-position:0px 0px; background-repeat:no-repeat;
+            height: 620px;
+        }
+        .app-left .pic1 img{
+            z-index: 10;
+            width: 229px;
+            height: 407px;
+            margin-top: 110px;
+            margin-left: 36px;
+            position: absolute;
+
+        }
+        .app-left .pic2 img{
+            z-index: -1;
+            width: 229px;
+            height: 438px;
+            margin-top: 70px;
+            margin-left: 207px;
+            position: absolute;
+
+        }
+        .app-right{
+            width: 400px;
+            float: left;
+        }
+        .app-bottom{
+            float: left;
+            width:100%;
+            margin-top:20px;
+            margin-bottom: 20px;
+        }
+        .app-bottom p{
+            line-height: 150%;
+            width: 445px;
+            font-size: 15px;
+            margin-top:10px;
+            margin-bottom: 10px;
+        }
+        .bottom-left{
+            float:left;
+            width: 445px;
+        }
+        .bottom-right{
+            float:left;
+            width: 445px;
         }
     </style>
 </head>
@@ -54,11 +107,11 @@
 
   <!-- section about us -->
 
-  <section class="about-us">
+  <section class="apps">
 
   <div class="content"  >
 
-      <div class="header-menu" style="float: left;width: 100%"><div>应用下载</div>
+      <div class="header-menu" style="float: left;width: 100%;margin-bottom: 15px;"><div>应用下载</div>
           <ul>
   <!--            <li><a href="http://www.smartisan.com/apps/#/calendar" ng-class="{'on':pageName == 'calendar'}"
                      class="on">日历</a></li>
@@ -69,8 +122,41 @@
           </ul>
       </div>
 
+      <div style="width:100%;">
+          <!-------左边部分------------->
+          <div class="app-left" >
+            <div class="pic1" >
+                <img src="img/a.jpg" >
+            </div>
+            <div class="pic2" >
+                <img src="img/a.jpg">
+            </div>
+
+          </div>
+
+          <div class="app-right">
+
+              <div class="desc-content">
+                  <div class="desc-title">
+                      <h1>点账理财工具</h1>
+
+                  </div>
+                  <div class="desc-summary"><p>时钟拟物化的界面风格和动画，让时间的流动显得更为鲜活生动。世界时钟支持超过六百个城市、地区的当前时间与本地时差及天气信息。世界时钟会根据所在城市当天的日出日落时间改变表盘颜色。</p></div>
+                  <div class="desc-download ">
+                      <div class="downloadbtn">
+                          <span><input  class="downloadInf" id="download-android" name="priceDownload" type="button" value="Android 版"></span>
+                          <span><input  class="downloadInf" id="download-iPhone" name="byDesign" type="button" disabled="disabled" value="iPhone 版"></span>
+                          <span><input  class="downloadInf" id="view-web" name="byDesign" type="button"  value="网页版"></span>
+                      </div>
+                  </div>
+
+            </div>
+          </div>
+      </div>
+  <div class="app-middle">
+      <div class="header-menu" style="float: left;width: 100%;"><div style="font-size:20px;">应用截图</div></div>
       <div class="column-one">
-          <img src="img/a.jpg" width="300px" height="400px">
+          <img src="img/a.jpg" width="295px" height="400px">
 <!--        <div class="circle-one"></div>
 
           <h2>RESPONSIVE</h2>
@@ -79,7 +165,7 @@
       </div>
 
       <div class="column-two">
-          <img src="img/a.jpg" width="300px" height="400px">
+          <img src="img/a.jpg" width="295px" height="400px">
 <!--        <div class="circle-two"></div>
 
           <h2>MINIMALIST</h2>
@@ -89,14 +175,30 @@
 
 
       <div class="column-three" >
-          <img src="img/a.jpg" width="300px" height="400px">
+          <img src="img/a.jpg" width="295px" height="400px">
         <!--<div class="circle-three"></div>-->
 
         <!--<h2>FREEBIES</h2>-->
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>-->
 
     </div>
+      </div>
+<div class="app-bottom">
+    <div class="bottom-left">
+        <div>Android V1.4 新版特性</div>
 
+        <p>更新时间 2015 - 04 - 23</p>
+        <p>新增：问题反馈功能；</p>
+        <p>优化：提升了应用的稳定性，修复了一些 bug。</p>
+    </div>
+    <div class="bottom-right">
+        <div>iPhone V1.4 新版特性</div>
+
+        <p>更新时间 2015 - 10 - 08</p>
+        <p>新增：适配 iOS 9；</p>
+        <p> 优化：修复了一些 bug。</p>
+    </div>
+</div>
   </div>
 
   </section>

@@ -127,7 +127,9 @@ textarea{
 
 /* iPad (portrait) */
 @media (min-width: 580px) and (max-width: 767px) {
-
+.header-menu{
+    width: 760px;
+}
 .menu{
   display:none;
 }
