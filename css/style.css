@@ -327,6 +327,7 @@ h1 span{
    line-height:60px;
    float:left;
    list-style: none;
+
  }
 
 .menu-content ul{
@@ -963,8 +964,8 @@ input.btnInf:hover{
 /* 浮动菜单 */
 .side-bar a,.chat-tips i {background: url(../img/right_bg.png) no-repeat;}
 .side-bar {width: 66px;position: fixed;bottom: 20px;right: 25px;font-size: 0;line-height: 0;z-index: 1000;}
-.side-bar a {width: 66px;height: 66px;display: inline-block;background-color: #ddd;margin-bottom: 2px;}
-.side-bar a:hover {background-color: #669fdd;}
+.side-bar a {width: 66px;height: 66px;display: inline-block;background-color: #669FDD;margin-bottom: 2px;}
+.side-bar a:hover {background-color: #A01010;}
 .side-bar .icon-qq {background-position: 0 -62px;}
 .side-bar .icon-chat {background-position: 0 -130px;position: relative;}
 .side-bar .icon-chat:hover .chat-tips {display: block;}
@@ -1185,6 +1186,32 @@ input.downloadInf:hover{
 
 .apps .column-three .circle-three:hover{
     border:2px solid #A2150A;
+}
+.app-right{
+    width: 400px;
+    float: left;
+}
+
+.app-bottom{
+    float: left;
+    width:100%;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.app-bottom p{
+    line-height: 150%;
+    width: 445px;
+    font-size: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.bottom-left{
+    float:left;
+    width: 445px;
+}
+.bottom-right{
+    float:left;
+    width: 445px;
 }
 /* Footer */
 

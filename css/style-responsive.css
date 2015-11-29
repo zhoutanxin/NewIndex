@@ -60,6 +60,55 @@ h1 {
   margin-bottom:70px;
  }
 
+.apps .content{
+    width:300px;
+}
+
+.apps .column-one, .apps .column-two{
+    width:300px;
+    margin-bottom:20px;
+}
+
+.apps .content .column-three{
+    width:300px;
+    margin-bottom:70px;
+}
+.apps .app-left {
+    width: 320px;
+    float: left;
+    background: url("../img/phone300.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 620px;
+}
+.apps .app-left .pic1 img {
+    z-index: 10;
+    width: 229px;
+    height: 407px;
+    margin-top: 55px;
+    margin-left: 22px;
+    position: absolute;
+}
+.app-left .pic2 img {
+    display: none;
+}
+.app-right{
+    width:300px;
+}
+.desc-title h1{
+    margin-top: 0px;
+    font-size: 22px;
+    width: 300px;
+}
+.desc-summary{
+    width: 300px;
+}
+.desc-download {
+    width: 300px;
+}
+.bottom-left,.bottom-right,.bottom-left p,.bottom-right p{
+    width: 300px
+}
 .portfolio .portfolio-margin{
   width:300px;
 }
@@ -185,6 +234,55 @@ h1 {
   margin-bottom:70px;
  }
 
+ .apps .content{
+        width:580px;
+   }
+.header-menu div{
+    padding-left: 20px;
+}
+.header-menu ul{
+    padding-right: 20px;
+}
+ .app-left{
+    margin-left:50px;
+}
+ #undefined-sticky-wrapper{
+     display: none;
+ }
+.apps .column-one, .apps .column-two{
+    width:580px;
+    margin-bottom:20px;
+}
+.apps .column-three{
+    width:580px;
+    text-align: center;
+    margin-bottom:70px;
+}
+.app-middle{
+   text-align: center;
+}
+.app-right{
+    width:580px
+}
+.app-bottom{
+    width:580px;
+}
+ .bottom-left,.bottom-right{
+    width:580px;
+    text-align: center;
+}
+.desc-title{
+    float: left;
+    width: 580px;
+}
+.desc-title h1{
+    margin-top: 0px;
+    font-size: 22px;
+}
+.desc-summary p{
+    width: 510px;
+    text-align: center;
+}
 .portfolio .portfolio-margin{
   width:300px;
 }
@@ -290,6 +388,8 @@ textarea{
 .about-us .column-three{
   width:233px;
 }
+
+
 
 .portfolio .portfolio-margin {
   width:600px;
