@@ -15,13 +15,23 @@ $("#iframe").load("content.html",function(){
     loadGlobMenu();
 });
 $("#item-download").click(function(){
-    loadPage('apps.html');
+    $("#iframe").load("apps.html",function(){
+        if( $("#app-download-menu").offset()!=undefined){
+            $('html, body').stop().animate({ scrollTop: $("#app-download-menu").offset().top-140 }, 1000, function() {
+            });
+        }
+    });
     $(this).parent().siblings().removeClass("active");
     $(this).parent().addClass("active");
 
 });
 $("#m-apps").click(function(){
-    loadPage('apps.html');
+    $("#iframe").load("apps.html",function(){
+        if( $("#app-download-menu").offset()!=undefined){
+            $('html, body').stop().animate({ scrollTop: $("#app-download-menu").offset().top-140 }, 1000, function() {
+            });
+        }
+    });
     $(this).parent().siblings().removeClass("active");
     $(this).parent().addClass("active");
 

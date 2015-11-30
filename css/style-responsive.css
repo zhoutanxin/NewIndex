@@ -246,9 +246,7 @@ h1 {
  .app-left{
     margin-left:50px;
 }
- #undefined-sticky-wrapper{
-     display: none;
- }
+
 .apps .column-one, .apps .column-two{
     width:580px;
     margin-bottom:20px;

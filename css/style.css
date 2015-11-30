@@ -234,13 +234,14 @@ h1 span{
 }
 
 .menu-media .menu-content .logo {
-   color:#A2150A;
-   font-weight:700;
-   font-size:24px;
-   width:200px;
-   line-height:90px;
-   float:left;
-   list-style: none;
+    color: #A2150A;
+    font-weight: 700;
+    font-size: 24px;
+    width: 200px;
+    line-height: 60px;
+    float: left;
+    list-style: none;
+    padding-top: 20px;
 }
 
 .menu-media .menu-content .icon{
