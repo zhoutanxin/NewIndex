@@ -970,7 +970,7 @@ input.btnInf:hover{
 .side-bar .icon-qq {background-position: 0 -62px;}
 .side-bar .icon-chat {background-position: 0 -130px;position: relative;}
 .side-bar .icon-chat:hover .chat-tips {display: block;}
-.side-bar .icon-blog {background-position: 0 -198px;}
+.side-bar .icon-blog {background-position: 0 -3px;}
 .side-bar .icon-mail {background-position: 0 -266px;}
 .side-bar .icon-totop {background-position: 0 -334px;}
 .chat-tips {padding: 20px;border: 1px solid #d1d2d6;position: absolute;right: 78px;top: -55px;background-color: #fff;display: none;}
