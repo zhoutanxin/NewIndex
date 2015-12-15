@@ -11,6 +11,10 @@ function loadGlobMenu(){
         });
     $("#item-download").parent().removeClass("active");
 }
+function toBuy(){
+    $('html, body').stop().animate({ scrollTop: $(".contact").offset().top}, 1000, function() {
+    });
+}
 $("#iframe").load("content.html",function(){
     loadGlobMenu();
 });
