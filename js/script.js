@@ -29,16 +29,7 @@ $("#item-download").click(function(){
     $(this).parent().addClass("active");
 
 });
-$("#profile").click(function(){
-    $("#iframe").load("about.html",function(){
-        if( $(".profileAbout").offset()!=undefined){
-            $('html, body').stop().animate({ scrollTop: $(".profileAbout").offset().top-140 }, 1000, function() {
-            });
-        }
-    });
-    $("#item-about").parent().siblings().removeClass("active");
-    $("#item-about").parent().addClass("active");
-});
+
 $("#m-apps").click(function(){
     $("#iframe").load("apps.html",function(){
         if( $("#app-download-menu").offset()!=undefined){
@@ -49,6 +40,26 @@ $("#m-apps").click(function(){
     $(this).parent().siblings().removeClass("active");
     $(this).parent().addClass("active");
 
+});
+$("#profile").click(function(){
+    $("#iframe").load("about.html",function(){
+        if( $(".profileAbout").offset()!=undefined){
+            $('html, body').stop().animate({ scrollTop: $(".profileAbout").offset().top-140 }, 1000, function() {
+            });
+        }
+    });
+    $("#item-about").parent().siblings().removeClass("active");
+    $("#item-about").parent().addClass("active");
+});
+$("#m-profile").click(function(){
+    $("#iframe").load("about.html",function(){
+        if( $(".profileAbout").offset()!=undefined){
+            $('html, body').stop().animate({ scrollTop: $(".profileAbout").offset().top-140 }, 1000, function() {
+            });
+        }
+    });
+    $("#item-about").parent().siblings().removeClass("active");
+    $("#item-about").parent().addClass("active");
 });
   // niceScroll滚动条
   $("html").niceScroll();
